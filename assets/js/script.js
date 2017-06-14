@@ -12,7 +12,7 @@ $(function () {
         editable: true, //permitir edição
         eventLimit: true, 
         allDaySlot: false, //oculta o slot superior de evento do dia inteiro
-        height: "auto", //delimita o tamanho do calendário
+        height: 450, //delimita o tamanho do calendário
         hiddenDays: [0,1], //oculta os dias da semana
         events: BASE_URL+"/ajax/getEvents", //Carrega todos os eventos do banco de dados
         //Ao clicar em um evento
@@ -50,7 +50,8 @@ $(function () {
                     data:'title='+title+'&start='+start+'&end='+end,
                     dataType:'json',
                     success: function(json) {
-                        $('#calendar').fullCalendar('renderEvent', json, true);
+                        //location.reload();
+                        $('#calendar').fullCalendar('renderEvent', json, false);
                     },
                     error: function() {
                         alert("Ocorreu algum erro ao incluir o evento");
@@ -71,9 +72,9 @@ $(function () {
                 data:'id='+id+'&start='+start+'&end='+end,
                 dataType:'json',
                 success: function(json) {
-                    //location.reload();
+                    location.reload();
                     //$('#calendar').fullCalendar('refetchEvents');
-                    $('#calendar').fullCalendar('renderEvent', calEvent, true);
+                    //$('#calendar').fullCalendar('renderEvent', calEvent, false);
                 },
                 error: function() {
                     alert("Ocorreu algum erro ao mover o evento");
@@ -94,9 +95,9 @@ $(function () {
                 data:'id='+id+'&start='+start+'&end='+end,
                 dataType:'json',
                 success: function(json) {
-                    //location.reload();
+                    location.reload();
                     //$('#calendar').fullCalendar('refetchEvents');
-                    $('#calendar').fullCalendar('renderEvent', calEvent, true);
+                    //$('#calendar').fullCalendar('renderEvent', calEvent, false);
                 },
                 error: function() {
                     alert("Ocorreu algum erro ao mover o evento");

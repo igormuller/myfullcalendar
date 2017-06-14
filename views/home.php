@@ -3,10 +3,10 @@
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>A Bootstrap Starter Template</h1>
-            <p class="lead">Site padrão MVC com Bootstrap e Calendário</p>
+            <h1>Agendamentos</h1>
         </div>
     </div>
+    <br/>
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12 text-center">

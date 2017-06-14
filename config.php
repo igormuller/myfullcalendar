@@ -9,7 +9,7 @@ if (ENVIRONMENT == "development") {
   $config["charset"] = "utf8";
   $config["dbuser"] = "root";
   $config["dbpass"] = "";
-  define("BASE_URL","http://localhost/mycalendar");
+  define("BASE_URL","http://localhost/myfullcalendar");
 } else {
   $config["dbname"] = "banco_dados";
   $config["host"] = "localhost";

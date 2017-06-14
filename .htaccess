@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /mycalendar/index.php?q=$1 [QSA,L]
+RewriteRule ^(.*)$ /myfullcalendar/index.php?q=$1 [QSA,L]
